@@ -1,0 +1,22 @@
+@import "styles/main";
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $main_font, sans-serif;
+  font-size: $paragraph_1_size;
+  line-height: $paragraph_1_line_height;
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

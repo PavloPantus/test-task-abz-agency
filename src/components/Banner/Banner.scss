@@ -1,0 +1,26 @@
+@import "../../styles/main";
+.banner {
+  background-image: url("/images/banner-photo.jpg");
+  background-size: cover;
+  padding-left: 30px;
+  padding-top: 116px;
+  padding-bottom: 114px;
+
+  &__heading {
+    color: white;
+    max-width: 501px;
+    font-size: $heading_1_desktop_size;
+    line-height: $heading_1_desktop_line_height;
+  }
+
+  &__message {
+    color: white;
+    width: 529px;
+    margin-top: 37px;
+    height: 110px;
+  }
+
+  &__sing-up-button{
+    margin-top: 39px;
+  }
+}

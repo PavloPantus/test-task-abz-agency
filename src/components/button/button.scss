@@ -1,0 +1,25 @@
+@import '../../styles/main';
+
+.button {
+  transition: all 1s;
+  cursor: pointer;
+  width: 210px;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 58px 9px;
+  background-color: $main_color;
+  color: white;
+  outline: none;
+
+  &:hover {
+    background-color: #d24335;
+  }
+
+  &_hidden {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    visibility: hidden;
+  }
+}

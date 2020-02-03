@@ -1,0 +1,35 @@
+@import "../../styles/main";
+
+.users {
+  padding: 160px 82px;
+  background-color: #f9f9f3;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: $heading_1_desktop_size;
+    line-height: $heading_1_desktop_line_height;
+  }
+
+  &__description {
+    margin-top: 30px;
+
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 204px);
+    grid-gap: 60px 135px;
+    margin-top: 78px;
+
+  }
+
+  &__show-more-button {
+    margin-top: 40px;
+  }
+
+}

@@ -1,0 +1,49 @@
+@import "../../styles/main";
+
+.flat-button {
+  color: $main_color;
+  &:hover {
+   color: #d24335;
+  }
+}
+
+.about-me {
+  padding: 160px 37px 156px;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__heading {
+    white-space: nowrap;
+    color: #212529;
+    font-size: $heading_1_desktop_size;
+    line-height: $heading_1_desktop_line_height;
+    margin: 0 290px 68px;
+  }
+
+  &__logo {
+    width: 339px;
+  }
+
+  &__description {
+    width: 550px;
+    margin-left: 50px;
+  }
+
+  &__article-heading{
+    font-size: $heading_2_size;
+    line-height: $heading_2_line_height;
+  }
+
+  &__article-description {
+    margin-top: 24px;
+  }
+
+
+  &__sign-up-button {
+    margin-top: 36px;
+  }
+}

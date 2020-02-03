@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+import { Header } from './components/header/header';
+import { Banner } from './components/Banner/Banner';
+import { AboutMe } from './components/about-me-section/about-me-section';
+import Users from './components/Users/index';
+import Register from './components/Register-seciton/index';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Header />
+      <Banner />
+      <main>
+        <AboutMe />
+      </main>
+      <Users />
+      <Register />
+      <Footer />
+    </Provider>
   );
 }
 
