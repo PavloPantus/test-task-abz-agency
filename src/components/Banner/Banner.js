@@ -3,7 +3,9 @@ import './Banner.scss';
 import { Button } from '../button/button';
 
 export const Banner = () => (
-  <section className="banner section">
+  <section
+    className="banner section"
+  >
     <div className="container">
       <h1 className="banner__heading">
           Test assignment
