@@ -173,7 +173,7 @@ export const RegisterSection = (
     }
 
     if (
-      userPhoto === 'Upload your photo'
+      typeof userPhoto === 'string'
       || userPhotoHasError
     ) {
       userPhotoRef.current.scrollIntoView({
