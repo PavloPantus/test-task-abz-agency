@@ -8,8 +8,14 @@ export const Header = () => (
         <a href="#register-section" className="header__logo">
           <img src="./images/logo.svg" alt="logo" />
         </a>
+
         <nav className="header__nav">
-          <ul className="nav">
+          <input id="menu__toggle" type="checkbox"/>
+          <label className="menu__btn" htmlFor="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul className="nav menu__box">
             <li className="nav__item">
               <a href="#register-section">About me</a>
             </li>

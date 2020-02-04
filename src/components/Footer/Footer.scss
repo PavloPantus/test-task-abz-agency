@@ -1,8 +1,12 @@
 .footer {
   &__content {
-    padding: 28px 368px 15px;
   }
   &__design {
+    height: 60px;
+    border: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: #4c4b4b;
   }

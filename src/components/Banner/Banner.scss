@@ -15,12 +15,63 @@
 
   &__message {
     color: white;
-    width: 529px;
+    max-width: 529px;
     margin-top: 37px;
-    height: 110px;
   }
 
   &__sing-up-button{
     margin-top: 39px;
+  }
+}
+
+@media  (max-width: 768px) {
+  .banner {
+    padding-left: 30px;
+    padding-top: 67px;
+    padding-bottom: 65px;
+
+    &__heading {
+      color: white;
+      max-width: 501px;
+      font-size: $heading_1_tablet_size;
+      line-height: $heading_1_tablet_line_height;
+    }
+
+    &__message {
+      color: white;
+      margin-top: 37px;
+    }
+
+    &__sing-up-button{
+      margin-top: 39px;
+    }
+  }
+}
+
+@media  (max-width: 360px) {
+  .banner {
+    padding: 76px 3px 75px 3px;
+
+    &__content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__heading {
+      text-align: center;
+      font-size: $heading_1_mobile_size;
+      line-height: $heading_1_mobile_line_height;
+    }
+
+    &__message {
+      color: white;
+      text-align: center;
+      margin-top: 29px;
+    }
+
+    &__sing-up-button{
+      margin-top: 26px;
+    }
   }
 }
